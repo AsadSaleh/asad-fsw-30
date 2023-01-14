@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Challenge nih bos</h1>
+    <h4>Suit manusia vs computer</h4>
+
+    <div class="grid">
+      <div>
+        <h4>Manusia</h4>
+        <h1 id="human_hand" class="human">👋</h1>
+        <h1 id="human_rock" class="human">🪨</h1>
+        <h1 id="human_scissors" class="human">✂️</h1>
+      </div>
+
+      <div>
+        <div>V.S.</div>
+        <div>Pemenangnya adalah: <span id="result"></span></div>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div>
+        <h4>Computer</h4>
+        <h1 id="computer_hand" class="computer">👋</h1>
+        <h1 id="computer_rock" class="computer">🪨</h1>
+        <h1 id="computer_scissors" class="computer">✂️</h1>
+      </div>
+    </div>
+  </body>
+  <script src="suitJepang.js"></script>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+  </style>
+</html>

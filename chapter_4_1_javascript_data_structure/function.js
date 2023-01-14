@@ -1,5 +1,6 @@
 // 1. apa itu fungsi?
-// Suatu bagian code yang eksekusinya ditunda hingga ia dipanggil
+// Suatu bagian code yang eksekusinya ditunda hingga ia dipanggil.
+// Berguna agar code kita "reusable"
 
 // 2. bagaimana cara menulis fungsi?
 function namaFungsi() {
@@ -17,6 +18,12 @@ function sayHello(namaOrang) {
   console.log("Hallo " + namaOrang + "! Apa kabar?");
 }
 sayHello("John McCaine");
+sayHello("Fawwaz");
+sayHello("Kurnia");
+
+console.log("Hallo " + "John McCaine" + "! Apa kabar?");
+console.log("Hallo " + "Fawwaz" + "! Apa kabar?");
+console.log("Hallo " + "Kurnia" + "! Apa kabar?");
 
 // 5. fungsi yang menghasilkan suatu value (return value):
 // 5.1 Contoh return value:
@@ -38,3 +45,18 @@ function jumlah2Angka(angka1, angka2) {
   return hasilPenjumlahan;
 }
 console.log(jumlah2Angka(10, 11));
+
+// cara nulis function:
+
+//1
+function namaFungsi(a, b, c) {
+  return a * b - c;
+}
+
+// 2
+const namaFungsi = function (a, b, c) {
+  return a * b - c;
+};
+
+// 3
+const namaFungsi = (a, b, c) => a * b - c;

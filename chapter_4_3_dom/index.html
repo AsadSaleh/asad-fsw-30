@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="center">
+    <h1 id="title">Halo Dunia</h1>
+    <p id="desc">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, dicta.
+      Architecto impedit natus omnis corrupti veniam, iure nam quod. Id
+      consequuntur dolore eius itaque maxime numquam obcaecati voluptates
+      incidunt dolorem?
+    </p>
+    <ul>
+      <li>Satu</li>
+      <li>Dua</li>
+      <li>Tiga</li>
+    </ul>
+  </body>
+  <style>
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <script>
+    console.log("hello indonesia!");
+
+    // 1. Kita harus target si elementnya
+    const elementH1 = document.querySelector("#title");
+    // const elementH1byid = document.getElementById("title");
+    console.log(elementH1);
+
+    // 2. Elementnya bisa kita mainin
+    elementH1.style.color = "red";
+    elementH1.textContent = "test";
+
+    // element.addEventListener(namaEvent, fungsiResponTerhadapEvent)
+    elementH1.addEventListener("click", () => {
+      elementH1.style.color = "blue";
+    });
+
+    const kumpulanElement = document.querySelectorAll("li");
+    setInterval(() => {
+      kumpulanElement.forEach((el, idx, arr) => {
+        if (idx === 0) {
+          el.style.color = "red";
+        } else if (idx === 1) {
+          el.style.color = "blue";
+        } else {
+          el.style.color = "green";
+        }
+      });
+      setTimeout(() => {
+        kumpulanElement.forEach((el) => {
+          el.style.color = "black";
+        });
+      }, 500);
+    }, 1000);
+
+    // =====================================
+
+    // tujuan: mentengahkan komponen
+    // 1. kasih display:flex di body lalu kasih juga items-center
+    const body = document.querySelector("body");
+    body.style.display = "flex";
+    body.style.flexDirection = "column";
+    body.style.alignItems = "center";
+    body.style.justifyContent = "center";
+  </script>
+</html>
