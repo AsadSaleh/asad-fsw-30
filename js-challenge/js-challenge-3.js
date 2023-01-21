@@ -2,7 +2,7 @@
 // dengan value yang sudah dipotong 20% dari harga aslinya.
 function calculateDiscountedPrice(inputNumber) {
   // return inputNumber - inputNumber * 0.2;
-  return inputNumber * 0.8;
+  return;
 }
 
 console.log(calculateDiscountedPrice(1_000_000));
@@ -12,10 +12,7 @@ console.log(calculateDiscountedPrice(500_000));
 // 2. Buat fungsi "convertIntoDiscountedItem" yang menerima input berbentuk { name:string, price:number }
 // lalu menghasilkan output { name:string, price:number } (sama) dengan property price-nya dipotong 20%
 function convertIntoDiscountedItem(inputObj) {
-  return {
-    name: inputObj.name,
-    price: calculateDiscountedPrice(inputObj.price),
-  };
+  return;
 }
 
 console.log(convertIntoDiscountedItem({ name: "Laptop", price: 10_000_000 }));
@@ -40,6 +37,6 @@ const arrayOfItems = [
   },
 ];
 
-const discountedArrayOfItems = arrayOfItems.map(convertIntoDiscountedItem);
+const discountedArrayOfItems = []; // todo
 
 console.log(discountedArrayOfItems);
