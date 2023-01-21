@@ -1,7 +1,7 @@
-// 1. Buat fungsi "calculateDiscountedPrice" yang menerima number, lalu mengembalikan number
-// dengan value yang sudah dipotong 20% dari harga aslinya.
+// 1. Buat fungsi "calculateDiscountedPrice" yang menerima number, lalu menghasilkan harga
+// setelah diskon.
+// Tips: Harga setelah diskon = Harga awal - (Harga awal * persentase diskon)
 function calculateDiscountedPrice(inputNumber) {
-  // return inputNumber - inputNumber * 0.2;
   return;
 }
 
@@ -9,8 +9,10 @@ console.log(calculateDiscountedPrice(1_000_000));
 console.log(calculateDiscountedPrice(100_000));
 console.log(calculateDiscountedPrice(500_000));
 
-// 2. Buat fungsi "convertIntoDiscountedItem" yang menerima input berbentuk { name:string, price:number }
-// lalu menghasilkan output { name:string, price:number } (sama) dengan property price-nya dipotong 20%
+// 2. Buat fungsi "convertIntoDiscountedItem" yang menerima input berbentuk:
+// { name:string, price:number }
+// lalu menghasilkan output dengan bentuk yang sama, namun value "price"-nya
+// diubah menjadi harga setelah diskon.
 function convertIntoDiscountedItem(inputObj) {
   return;
 }
@@ -20,7 +22,7 @@ console.log(convertIntoDiscountedItem({ name: "Macbook", price: 20_000_000 }));
 console.log(convertIntoDiscountedItem({ name: "Buku", price: 500_000 }));
 
 // 3. Nah, sekarang ubah "arrayOfItems" dibawah ini menjadi "discountedArrayOfItems" baru dengan
-// harga yang sudah di diskon 20%.
+// harga setelah diskon.
 // Tips: Gunakan Array.map.
 const arrayOfItems = [
   {

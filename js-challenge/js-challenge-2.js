@@ -30,8 +30,10 @@ console.log(isBiggerThanFive(1));
 console.log(isBiggerThanFive(3));
 console.log(isBiggerThanFive(10));
 
-// 5. Buat fungsi getName yang mengambil property "name" dari iput
-// yang berbentuk object { name, power }.
+// 5. Buat fungsi getName yang menerima object:
+// { name: string, power: number }
+// lalu mengemballikan property "name"-nya.
+// Tips: gunakan "."
 function getName(inputObject) {
   return; // todo
 }
@@ -39,11 +41,12 @@ console.log(getName({ name: "asad", power: 60 }));
 console.log(getName({ name: "mike tyson", power: 100 }));
 console.log(getName({ name: "batman", power: 99 }));
 
-// 6. Buat fungsi "isStrong" yang menghasilkan true apabila input yang berupa
-// object { name, power } memiliki power lebih besar dari 80 (dan false kalau <= 80).
+// 6. Buat fungsi "isStrong" yang menerima object:
+// { name: string, power: number }
+// menghasilkan true apabila memiliki power lebih besar dari 80 (dan false kalau <= 80).
 function isStrong(inputObject) {
   return; // todo
 }
-console.log(isBiggerThanFive({ name: "mike tyson", power: 100 }));
-console.log(isBiggerThanFive({ name: "manusia biasa", power: 50 }));
-console.log(isBiggerThanFive({ name: "tentara", power: 85 }));
+console.log(isStrong({ name: "mike tyson", power: 100 }));
+console.log(isStrong({ name: "manusia biasa", power: 50 }));
+console.log(isStrong({ name: "tentara", power: 85 }));
