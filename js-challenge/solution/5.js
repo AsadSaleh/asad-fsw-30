@@ -3,15 +3,22 @@ const arrayOfNumbers = [100, 20, 500, 70, 0, 4, 19, 70000, 2, 1, 19, 36];
 
 // 1. Buat array baru tanpa bilangan di bawah 10. (n > 10)
 // Tips: Gunakan Array.filter()
-const arrayOfNumbersGreaterThanTen = [];
+const arrayOfNumbersGreaterThanTen = arrayOfNumbers.filter(function (number) {
+  if (number > 10) {
+    return true;
+  }
+});
 
 console.log(arrayOfNumbersGreaterThanTen);
 
 // 2. Buat array baru tapi hanya untuk angka diantara 10 (exclusive) dan 100 (inclusive).
 // logicnya: x > 10 dan x <= 100
 // Tips: Gunakan Array.filter()
-const arrayBetweenTenAndOneHundred = [];
-
+const arrayBetweenTenAndOneHundred = arrayOfNumbers.filter(function (number) {
+  if (number > 10 && number <= 100) {
+    return true;
+  }
+});
 console.log(arrayBetweenTenAndOneHundred);
 
 // Untuk soal 3 & 4.
@@ -52,13 +59,27 @@ const movies = [
 
 // 3. Buat array baru tanpa movie yang ratingnya dibawah 4.0 (logicnya movie.rating > 4)
 // Tips: Gunakan Array.filter()
-const moviesWithRatingGreaterThanFour = [];
-
+const moviesWithRatingGreaterThanFour = movies.filter(function (movie) {
+  if (movie.rating > 4) {
+    return true;
+  }
+});
 console.log(moviesWithRatingGreaterThanFour);
 
 // 4. Buat array baru hanya dengan movie yang ratingnya 5, tapi object barunya
 // hanya berisi { "title", "boxart" } saja.
 // Tips: Gunakan Array.filter() lalu disambung Array.map()
-const moviesWithRatingFiveTitleAndBoxartOnly = [];
+const moviesWithRatingFiveTitleAndBoxartOnly = movies
+  .filter(function (movie) {
+    if (movie.rating === 5) {
+      return true;
+    }
+  })
+  .map(function (movie) {
+    return {
+      title: movie.title,
+      boxart: movie.boxart,
+    };
+  });
 
 console.log(moviesWithRatingFiveTitleAndBoxartOnly);

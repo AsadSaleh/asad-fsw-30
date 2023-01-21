@@ -13,12 +13,12 @@ const classAttendees = [
 ];
 
 // 1. Insert new item :
-// { name: "Auda", occupation: "Assistant Teacher" }
+// { name: "Auda", occupation: "assistant teacher" }
 // to the front of the "classAttendees" array
 // Tips: use Array.unshift()
 
 // 2. Insert new item:
-// { name: "Rino", occupation: "Student" }
+// { name: "Rino", occupation: "student" }
 // to the end of the "classAttendees" array
 // Tips: use Array.push()
 
